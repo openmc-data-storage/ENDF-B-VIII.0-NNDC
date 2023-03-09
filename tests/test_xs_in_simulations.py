@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 
 import openmc
 
-os.environ["OPENMC_CROSS_SECTIONS"] = '/share/h5_files/nndc-b8.0-hdf5/endfb-viii.0-hdf5/cross_sections.xml'
+os.environ["OPENMC_CROSS_SECTIONS"] = '/share/h5_files/endfb-viii.0-hdf5/cross_sections.xml'
 
 
 def test_simulation_runs_with_isotopes():
