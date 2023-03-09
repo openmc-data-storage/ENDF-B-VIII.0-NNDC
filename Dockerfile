@@ -4,6 +4,9 @@ FROM openmc/openmc:develop
 # Clones OpenMC data repo which contains the processing scripts
 RUN git clone https://github.com/openmc-dev/data.git
 
+# package that contains some more processing scripts
+RUN pip install openmc_data
+
 # some nuclear data libr require unzip to decompress (e.g. Fendl 3.1d)
 RUN apt-get install -y unzip
 

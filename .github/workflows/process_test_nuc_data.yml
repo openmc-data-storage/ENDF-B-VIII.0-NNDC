@@ -7,7 +7,7 @@ on:
     branches:
     - main
 env:
-  PROCESS_CMD: 'python data/convert_*****.py -d /share/h5_files -r *****'
+  PROCESS_CMD: 'download_nndc -d /share/h5_files -r b8.0'
 jobs:
     build:
       runs-on: ubuntu-latest
